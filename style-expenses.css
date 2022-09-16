@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+}  
+
+:root {
+    --softRed: hsl(10, 79%, 65%);
+    --cyan: hsl(186, 34%, 60%);
+    --darkBrown: hsl(25, 47%, 15%);
+    --mediumBrown: hsl(28, 10%, 53%);
+    --cream: hsl(27, 66%, 92%);
+    --veryPaleOrange: hsl(33, 100%, 98%);
+}
+
+body {
+    background-color: var(--cream);
+    font-size: 18px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+header {
+    background-color: var(--softRed);
+    width: 550px;
+    border-radius: 10px;
+    margin: 10% auto 3% auto;
+    color: var(--veryPaleOrange);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3%
+}
+
+main {
+    background-color: var(--veryPaleOrange);
+    width: 550px;
+    margin: auto;
+    padding: 3%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+}
+
+main h1 {
+    color: var(--darkBrown);
+}
+
+main p {
+    color: var(--mediumBrown);
+}
+
+#grafic {
+    width: 550px;
+    height: 400px;
+    background-color: black;
+    margin: 3% 0px auto auto;
+    
+}
+
+.last-month {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.percent {
+    color: var(--darkBrown);
+    font-weight: 700; 
+}
+
+.line {
+    background-color: var(--cream);
+    height: 1px;
+    width: 95%;
+    margin: 5% auto;
+}
+
+.month {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+   
+.attribution { 
+    font-size: 11px; text-align: center;
+}
+  
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 600px) {
+    header, main {
+        width: 85%;
+        padding: 15px;
+    }
+}
